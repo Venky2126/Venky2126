@@ -31,8 +31,6 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=venky2126&" alt="venky2126" /></p>
 
-## Resume
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
