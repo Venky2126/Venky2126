@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Venkatewsarlu Dasari</h1>
-<h3 align="center">Java Backend Developer | Spring Boot | Microservices | REST APIs | Cloud (AWS/Azure) Experienced Java Backend Developer with 5+ years of expertise in building scalable, high-performance server-side applications. Proficient in Spring Boot, Microservices, RESTful APIs, and cloud-native solutions (AWS/Azure). Strong command over the Spring ecosystem (Spring MVC, Spring Batch, JPA/Hibernate) and database design (SQL/NoSQL). Skilled in designing and optimizing backend systems, boosting performance, and ensuring robust security. Passionate about writing clean, maintainable code and solving complex technical challenges.</h3>
+<h3 align="center">Java Backend Developer Passionate about writing clean, maintainable code and solving complex technical challenges.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=venky2126&label=Profile%20views&color=0e75b6&style=flat" alt="venky2126" /> </p>
 
