@@ -32,112 +32,519 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=venky2126&" alt="venky2126" /></p>
 
 ## Resume
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkateswarlu Dasari - Senior Java Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .resume-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+            background: white;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: pulse 15s infinite linear;
+        }
+        
+        @keyframes pulse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+        }
+        
+        .progress-bar {
+            background-color: var(--primary-color);
+        }
+        
+        .project-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 15px;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background-color: var(--light-bg);
+            color: var(--secondary-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            background: var(--accent-color);
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 0;
+            }
+            
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header text-center animate-on-scroll">
+            <div class="container">
+                <img src="https://ui-avatars.com/api/?name=Venkateswarlu+Dasari&background=random" alt="Profile" class="profile-img mb-3">
+                <h1 class="display-4 fw-bold mb-2">VENKATESWARLU DASARI</h1>
+                <p class="lead mb-4">Senior Java Engineer</p>
+                <div class="contact-info">
+                    <a href="mailto:venky4026@gmail.com" class="text-white me-3"><i class="fas fa-envelope me-2"></i>venky4026@gmail.com</a>
+                    <a href="tel:+917997227679" class="text-white"><i class="fas fa-phone me-2"></i>+91 7997227679</a>
+                </div>
+            </div>
+        </header>
 
-### VENKATESWARLU DASARI
-**Mail:** venky4026@gmail.com  
-**Mobile:** +91 7997227679  
+        <!-- Main Content -->
+        <div class="container py-5">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-4">
+                    <!-- Summary -->
+                    <section class="mb-5 animate-on-scroll">
+                        <h2 class="section-title">Summary</h2>
+                        <div class="card p-3 shadow-sm">
+                            <p>Experienced IT professional with 5 years of expertise in Java and related technologies.</p>
+                            <p>Strong exposure in development of Web Applications using technologies like Core Java, Spring Boot, Restful Services, Microservice, Hibernate/JPA, Spring Batch, Junit, Docker, Kubernetes, Azure, Azure DevOps, JMS & AWS.</p>
+                            <p>Excellent team player with very good communication skills and quick learner.</p>
+                        </div>
+                    </section>
 
-### Summary:
-- Experienced IT professional with 5 years of expertise in Java and related technologies.
-- Strong exposure in development of Web Applications using technologies like Core Java, Spring Boot, Restful Services, Microservice, Hibernate/JPA, Spring Batch, Junit, Docker, Kubernetes, Azure, Azure DevOps, JMS & AWS.
-- Experience with Tools like Maven, Gradle and IDEs like Eclipse, STS.
-- Excellent team player with very good communication skills and quick learner.
-- Ability to work on individually if needed and clearly communicate issues to development team and Management.
-- Capable of self-learning to explore and technical competency over broad range of technologies.
+                    <!-- Skills -->
+                    <section class="mb-5 animate-on-scroll">
+                        <h2 class="section-title">Technical Skills</h2>
+                        <div class="card p-3 shadow-sm">
+                            <div class="skill-item">
+                                <div class="skill-name">Java</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Spring Boot</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Microservices</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Hibernate/JPA</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Azure/AWS</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Docker/Kubernetes</div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-### Professional Experience:
-- Currently Working as Senior Java Engineer for Streben Technik Pvt Ltd from 15/06/2021 to till now.
-- Worked as Software Developer for Job Cookies Pvt Ltd from 05/02/2021 to 06/05/2021.
-- Worked as Software Engineer for Doodleblue Innovations Private Limited from 19/10/2020 to 30/11/2020.
-- Worked as Core Java Software Engineer Artech Infosystems Pvt Ltd from 11/02/2020 to 12/06/2020.
+                    <!-- Education -->
+                    <section class="mb-5 animate-on-scroll">
+                        <h2 class="section-title">Education</h2>
+                        <div class="card p-3 shadow-sm">
+                            <div class="timeline-item">
+                                <h5>B-Tech in Computer Science</h5>
+                                <p class="text-muted">Sri Venkateswara University, Tirupathi</p>
+                                <p class="text-muted">Graduated: 2018</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-### Educational Profile:
-- B-Tech from Sri Venkateswara University, Tirupathi in 2018.
+                <!-- Right Column -->
+                <div class="col-lg-8">
+                    <!-- Experience -->
+                    <section class="mb-5 animate-on-scroll">
+                        <h2 class="section-title">Professional Experience</h2>
+                        <div class="card p-3 shadow-sm">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h5>Senior Java Engineer</h5>
+                                    <p class="text-muted">Streben Technik Pvt Ltd | June 2021 - Present</p>
+                                    <ul>
+                                        <li>Developed and maintained enterprise-level Java applications</li>
+                                        <li>Implemented microservices architecture using Spring Boot</li>
+                                        <li>Worked with Azure cloud services and DevOps</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>Software Developer</h5>
+                                    <p class="text-muted">Job Cookies Pvt Ltd | Feb 2021 - May 2021</p>
+                                    <ul>
+                                        <li>Developed web applications using Java technologies</li>
+                                        <li>Implemented RESTful APIs for client applications</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>Software Engineer</h5>
+                                    <p class="text-muted">Doodleblue Innovations | Oct 2020 - Nov 2020</p>
+                                    <ul>
+                                        <li>Contributed to Java-based projects</li>
+                                        <li>Worked with Spring Framework components</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>Core Java Software Engineer</h5>
+                                    <p class="text-muted">Artech Infosystems | Feb 2020 - Jun 2020</p>
+                                    <ul>
+                                        <li>Developed core Java applications</li>
+                                        <li>Worked with database integration using JPA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-### Software Exposure:
-- **Technologies:** Java
-- **Frame Works:** Spring Boot, Quarkus, Spring Batch, Spring-MVC
-- **O-R Mapping:** Hibernate, JPA
-- **Web Services:** Restful services
-- **IDE and Tools:** Eclipse, Maven, STS and Gradle
+                    <!-- Projects -->
+                    <section class="mb-5 animate-on-scroll">
+                        <h2 class="section-title">Projects</h2>
+                        
+                        <!-- Project 1 -->
+                        <div class="project-card mb-4">
+                            <div class="project-header">
+                                <h5 class="mb-0">Ajman Pay</h5>
+                                <p class="mb-0">Magnati | FAB | Dec 2023 - Present</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">SMS Notification Service: Automated messaging system that triggers real-time transaction updates to customers via integration with Carve Out extension service, Elpaso, and IBM MQ, with additional features of scheduled batch processing using Spring Batch and REST API integration with MQ.</p>
+                                <h6>Responsibilities:</h6>
+                                <ul>
+                                    <li>Developed application using Spring Boot, IBM MQ with Microsoft SQL components</li>
+                                    <li>Integrating the view module with Microsoft SQL database using JPA</li>
+                                    <li>Involved application deployment in Azure environment</li>
+                                    <li>Involved SIT & UAT Bug fixing & Defects</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="tech-badge">Java 17</span>
+                                    <span class="tech-badge">Spring Boot</span>
+                                    <span class="tech-badge">IBM MQ</span>
+                                    <span class="tech-badge">Microsoft SQL</span>
+                                    <span class="tech-badge">Azure</span>
+                                    <span class="tech-badge">Azure DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-card mb-4">
+                            <div class="project-header">
+                                <h5 class="mb-0">Carve Out</h5>
+                                <p class="mb-0">Magnati | FAB | Feb 2023 - Present</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Prepaid Micro Service (PMS): Comprehensive banking solution comprising multiple services (Transaction, Customer, Batch, Card, and Servicing) with RESTful APIs, leveraging Microsoft SQL Server database.</p>
+                                <h6>Responsibilities:</h6>
+                                <ul>
+                                    <li>Developed application using Spring Boot with Microsoft SQL components</li>
+                                    <li>Integrating the view module with Microsoft SQL database using JPA</li>
+                                    <li>Involved application deployment in Azure environment</li>
+                                    <li>Involved in Vulnerability fix</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="tech-badge">Java 17</span>
+                                    <span class="tech-badge">Spring Boot</span>
+                                    <span class="tech-badge">RESTful APIs</span>
+                                    <span class="tech-badge">Microsoft SQL</span>
+                                    <span class="tech-badge">Azure</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="project-card mb-4">
+                            <div class="project-header">
+                                <h5 class="mb-0">CAS</h5>
+                                <p class="mb-0">ANA | IBS | Feb 2022 - Jan 2023</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Airline reservation and ticketing system for All Nippon Airways enabling travelers to book flights by making reservation on RIT Phase.</p>
+                                <h6>Responsibilities:</h6>
+                                <ul>
+                                    <li>Developed application using Spring Boot with Spring Batch components</li>
+                                    <li>Integrating the view module with PostgreSQL database using Mybatis</li>
+                                    <li>Involved document modifications</li>
+                                    <li>Involved Junit Test cases and RTF Implementation</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="tech-badge">Java 11</span>
+                                    <span class="tech-badge">Spring Boot</span>
+                                    <span class="tech-badge">Spring Batch</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">AWS</span>
+                                    <span class="tech-badge">Junit</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h5 class="mb-0">Netwrk.ai</h5>
+                                <p class="mb-0">Netwrk.ai | Streben Technik | Jun 2021 - Feb 2022</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Platform where startups meet the right investors, get funding, founders make credible connections and share ideas.</p>
+                                <h6>Responsibilities:</h6>
+                                <ul>
+                                    <li>Developed Web Resources using Rest components using Quarkus Framework</li>
+                                    <li>Played a key role in developing the application</li>
+                                    <li>Integrating the view module with PostgreSQL database using hibernate</li>
+                                    <li>Involved cloud log groups and parameters configurations</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="tech-badge">Java 11</span>
+                                    <span class="tech-badge">Spring Boot</span>
+                                    <span class="tech-badge">Quarkus</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
 
-### Project #4: Ajman Pay
-**Client:** Magnati  
-**Role:** Developer  
-**Servers:** Azure Environment  
-**Environment:** Java 17, Spring Boot, Restful Web Services, IBM MQ, Microsoft SQL, Spring Batch, Azure, Azure DevOps, Postman & JMS  
-**Organization:** FAB  
-**Duration:** DEC 2023 to till now  
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p class="mb-2">I hereby declare that the above-mentioned particulars are true to the best of my knowledge and belief.</p>
+                <p class="mb-0">Place: Bangalore | Date: 24/06/2025</p>
+                <p class="mt-3">(Venkateswarlu Dasari)</p>
+            </div>
+        </footer>
+    </div>
 
-**Description:**  
-SMS Notification Service: Automated messaging system that triggers real-time transaction updates to customers via integration with Carve Out extension service, Elpaso, and IBM MQ, with additional features of scheduled batch processing using Spring Batch and REST API integration with MQ.
+    <!-- Download Button -->
+    <div class="floating-btn animate-on-scroll" id="downloadBtn" title="Download Resume">
+        <i class="fas fa-download"></i>
+    </div>
 
-**Responsibilities:**
-- Developed application using Spring Boot, IBM MQ with Microsoft SQL components.
-- Integrating the view module with Microsoft SQL database using JPA.
-- Involved application deployment in Azure environment.
-- Involved SIT & UAT Bug fixing & Defects.
-- Played a key role in developing the application.
-- Involved in Vulnerability fix.
-- Involved Daily status meetings and Sprint meetings.
-
-### Project #3: Carve Out
-**Client:** Magnati  
-**Role:** Developer  
-**Servers:** Azure Environment  
-**Environment:** Java 17, Spring Boot, Restful Web Services, Microsoft SQL, Azure, STS  
-**Organization:** FAB  
-**Duration:** Feb 2023 to till now  
-
-**Description:**  
-Prepaid Micro Service (PMS): Comprehensive banking solution comprising multiple services (Transaction, Customer, Batch, Card, and Servicing) with RESTful APIs, leveraging Microsoft SQL Server database, to provide customer-friendly experiences for credit, top-up, balance inquiry, bulk transactions, statement generation, and withdrawals, integrated with SMS Notification Service for real-time updates via IBM MQ.
-
-**Responsibilities:**
-- Developed application using Spring Boot with Microsoft SQL components.
-- Integrating the view module with Microsoft SQL database using JPA.
-- Involved application deployment in Azure environment.
-- Involved SIT & UAT Bug fixing & Defects.
-- Involved in Vulnerability fix.
-- Involved Daily status meetings and Sprint meetings.
-
-### Project #2: CAS
-**Client:** ANA  
-**Role:** Developer  
-**Servers:** AWS Environment  
-**Environment:** Java 11, Spring Boot, Restful Web Services, Spring Batch, Mybatis, AWS, STS, Junit & RTF  
-**Organization:** IBS  
-**Duration:** Feb 2022 to Jan 2023  
-
-**Description:**  
-Airline reservation and ticketing in an ANA (All Nippon Airways) company is a project work aimed at creating a system that will enable traveler to book their flight by making reservation on RIT Phase. ANA has an extensive domestic and international route network that covers entirety of Japan and extends through China, Korea, USA, etc.
-
-**Responsibilities:**
-- Developed application using Spring Boot with Spring Batch components.
-- Integrating the view module with PostgreSQL database using Mybatis
-- Involved document modifications
-- Played a key role in developing the application.
-- Involved Junit Test cases and RTF Implementation.
-- Involved Daily status meetings and Weekly meeting.
-
-### Project #1: Netwrk.ai
-**Client:** Netwrk.ai  
-**Role:** Developer  
-**Servers:** GitHub  
-**Environment:** Java 11, Spring Boot, Restful Web Services, Postman, Quarkus & AWS  
-**Organization:** Streben Technik Pvt Ltd  
-**Duration:** June 2021 to Feb 2022  
-
-**Description:**  
-Netwrk.ai is platform where startups meet the right investors, get funding, founders make credible connections and share ideas. We connect you with credible opportunities that will help you fund your startup. We will facilitate start-ups, investors, corporates, mentors, incubators, subject-matter experts and others to collaborate with each other, benefitting themselves and in-turn others Connect with verified Investors and Increase your probability of getting funded. Meet industry experts, guides and mentors to make your startup more effective.
-
-**Responsibilities:**
-- Developed Web Resources using Rest components using Quarkus Framework.
-- Played a key role in developing the application.
-- Integrating the view module with PostgreSQL database using hibernate
-- Involved cloud log groups and parameters configurations.
-- Involved Daily status meetings and Weekly meetings.
-
-**I hereby declare that the above-mentioned particulars are true to the best of my knowledge and belief.**  
-**Place:** Banglore  
-**Date:** 24/06/2025  
-**(Venkateswarlu Dasari)**
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // Initial check
+        animateOnScroll();
+        
+        // Check on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Download button functionality
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // In a real implementation, you would link to a PDF version
+            alert('Download functionality would be implemented here to save as PDF');
+        });
+    </script>
+</body>
+</html>
