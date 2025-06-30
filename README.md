@@ -51,7 +51,8 @@
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Featured Projects & ![CV](https://venky2126.github.io/bio-service/resume.html)
+
 
 ### 1. Ajman Pay - SMS Notification Service
 **Technologies:** Java 17, Spring Boot, IBM MQ, Microsoft SQL, Azure  
