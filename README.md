@@ -51,7 +51,7 @@
 
 ---
 
-## 🚀 Featured Projects &  <a href="https://venky2126.github.io/bio-service/resume.html">
+## 🚀 Featured Projects & [Resume](https://venky2126.github.io/bio-service/resume.html)
 
 
 ### 1. Ajman Pay - SMS Notification Service
